@@ -1,13 +1,4 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+:root {
 	--kuro-red-normal: #D23E08;
 	--kuro-red-light: #FFB7B7;
 	--kuro-red-dark: #B66056;
@@ -41,6 +32,18 @@ body {
 	--kuro-brown-normal: #9D5918;
 	--kuro-brown-light: #F9CFB9;
 	--kuro-brown-dark: #837369;
+}
+
+body {
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
 }
 
 .workspace-tab-header.is-active::before,
