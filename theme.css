@@ -72,6 +72,7 @@ svg * {
 }
 
 .theme-dark {
-	--background-primary: var(--kuro-black-normal);
-	--background-secondary: var(--kuro-black-dark);
+	--background-primary: var(--kuro-black-dark);
+	--background-secondary: var(--kuro-black-normal);
+	--background-secondary: #212121;
 }
