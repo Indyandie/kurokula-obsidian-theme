@@ -77,6 +77,55 @@ svg * {
 	--background-secondary: #212121;
 }
 
+/* Headers */
+
+.markdown-preview-view h1,
+.cm-header-1 {
+	color: var(--kuro-white-dark);
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+	color: var(--kuro-cyan-dark);
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+	color: var(--kuro-magenta-dark);
+}
+
+.markdown-preview-view h4,
+.cm-header-4 {
+	color: var(--kuro-yellow-dark);
+}
+
+
+.markdown-preview-view h5,
+.cm-header-5 {
+	color: var(--kuro-red-dark);
+}
+
+.markdown-preview-view h6,
+.cm-header-6 {
+	color: var(--kuro-blue-dark);
+}
+
+.markdown-preview-view h1,
+.cm-header-1,
+.markdown-preview-view h2,
+.cm-header-2,
+.markdown-preview-view h3,
+.cm-header-3,
+.markdown-preview-view h4,
+.cm-header-4,
+.markdown-preview-view h5,
+.cm-header-5,
+.markdown-preview-view h6,
+.cm-header-6 {
+	font-weight: bold !important;
+	text-decoration: underline;
+}
+
 /* CODEBLOCK */
 
 code {
