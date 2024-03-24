@@ -76,3 +76,90 @@ svg * {
 	--background-secondary: var(--kuro-black-normal);
 	--background-secondary: #212121;
 }
+
+/* CODEBLOCK */
+
+code {
+	background-color: var(--kuro-black-dark);
+	color: var(--kuro-white-normal) !important;
+}
+
+.cm-inline-code {
+	background-color: var(--kuro-black-normal) !important;
+	color: var(--kuro-yellow-dark) !important;
+	font-weight: 600;
+	bottom: 0px !important;
+}
+
+.cm-hmd-codeblock {
+	color: var(--kuro-white-normal);
+}
+
+.cm-hmd-codeblock.cm-keyword,
+.token.keyword {
+	color: var(--kuro-blue-dark);
+	font-style: italic;
+}
+
+/* Defintions */
+.cm-def.cm-hmd-codeblock,
+.token.atrule,
+.token.attr-value,
+.token.builtin,
+.token.function,
+.token.class-name,
+.token.function {
+	color: var(--kuro-yellow-dark);
+	font-weight: bold;
+}
+
+.cm-link,
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3,
+.cm-hmd-codeblock.cm-variable,
+.token.entity,
+.token.parameter,
+.token.property,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: var(--kuro-magenta-dark);
+	font-weight: bold;
+}
+
+
+.cm-hmd-codeblock.cm-operator,
+.token.operator {
+	color: var(--kuro-white-dark);
+}
+
+.cm-hmd-codeblock.cm-number,
+.token.number {
+	color: var(--kuro-cyan-dark);
+	font-weight: bold;
+	font-style: italic;
+}
+
+.cm-builtin.cm-hmd-codeblock,
+.token.constant,
+.token.boolean,
+.token.builtin {
+	color: var(--kuro-blue-normal);
+	font-weight: 900;
+}
+
+.cm-hmd-codeblock.cm-string,
+.token.string {
+	color: var(--kuro-green-dark);
+}
+
+.cm-hmd-codeblock.cm-comment,
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: var(--kuro-yellow-light);
+	opacity: 0.5;
+}
