@@ -1,7 +1,7 @@
 {
-	"name": "kurokula",
+	"name": "Kurokula",
 	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
+	"minAppVersion": "1.4.16",
 	"author": "indyandie",
 	"authorUrl": "https://github.com/Indyandie/kurokula-obsidian-theme"
 }
