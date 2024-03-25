@@ -184,10 +184,47 @@ mark {
 	font-style: italic;
 }
 
+/* Lists & Tasks */
+
+.markdown-preview-view .task-list-item-checkbox {
+	border-color: var(--kuro-white-dark);
+}
+
+.list-bullet:after {
+	color: red !important;
+	background-color: var(--kuro-white-dark);
+}
+
+.cm-s-obsidian span.cm-formatting-list {
+	color: var(--kuro-white-dark);
+}
+
+/* preview */
+ol>li::marker,
+ul>li::marker {
+	color: var(--kuro-white-dark);
+}
+
+/* Indent depth
+   Consistency in horizontal positioning of lists
+*/
+.cm-line.HyperMD-list-line {
+	tab-size: 24px !important;
+}
+
+/* Space between list items */
+.markdown-source-view ol>li,
+.markdown-source-view ul>li,
+.markdown-preview-view ol>li,
+.markdown-preview-view ul>li,
+.mod-cm6 .HyperMD-list-line.cm-line {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
 /* CODEBLOCK */
 
-
-/* edit-mode */
+/* edit-*/
 
 .cm-inline-code {
 	background-color: var(--kuro-black-normal) !important;
@@ -200,7 +237,7 @@ mark {
 	color: var(--kuro-code-fg);
 }
 
-/* preview-mode */
+/* preview */
 
 code,
 .markdown-rendered code {
