@@ -408,3 +408,14 @@ pre[class*="language-"] {
 .cm-keyword {
 	color: var(--kuro-code-keyword);
 }
+
+/* BLOCKQUOTES */
+
+/* editor */
+
+.cm-quote,
+blockquote {
+	color: var(--kuro-orange-light) !important;
+	border-color: var(--kuro-black-light) !important;
+	border-left-width: 8px !important;
+}
