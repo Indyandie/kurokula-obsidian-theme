@@ -155,6 +155,35 @@ svg * {
 	opacity: 0.75;
 }
 
+/* TAGS */
+
+.cm-hashtag,
+a.tag {
+	color: var(--kuro-white-light);
+	background: var(--kuro-purple-dark);
+}
+
+/* bold and emphasis */
+
+/* preview */
+em,
+.cm-em,
+.cm-strong,
+strong {
+	color: var(--kuro-white-light);
+}
+
+/* HIGHLIGHT */
+
+.cm-highlight,
+mark {
+	color: var(--kuro-black-dark) !important;
+	background-color: var(--kuro-yellow-dark) !important;
+	padding: 2px;
+	font-weight: bold;
+	font-style: italic;
+}
+
 /* CODEBLOCK */
 
 
