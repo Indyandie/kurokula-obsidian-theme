@@ -77,14 +77,15 @@ body {
 
 	/* Blockquotes */
 	--blockquote-border-thickness: 8px;
-	--blockquote-border-color: red;
-	--blockquote-font-style: normal;
+	--blockquote-border-color: var(--kuro-black-light);
+	--blockquote-font-style: italic;
 	--blockquote-color: inherit;
 	--blockquote-background-color: transparent;
 
 	/* Bold */
 	--bold-weight: var(--font-semibold);
 	--bold-color: inherit;
+
 	/* Borders */
 	--border-width: 1px;
 	/* Buttons */
@@ -1115,9 +1116,11 @@ pre[class*="language-"] {
 
 /* editor */
 
+.markdown-rendered blockquote,
 .cm-quote,
 blockquote {
 	color: var(--kuro-orange-light) !important;
 	border-color: var(--kuro-black-light) !important;
 	border-left-width: 8px !important;
+	font-style: italic;
 }
