@@ -136,24 +136,30 @@ body {
 	--canvas-dot-pattern: var(--color-base-30);
 
 	/* Collapse icons */
-	--collapse-icon-color: var(--text-faint);
-	--collapse-icon-color-collapsed: var(--text-accent);
+	--collapse-icon-color: var(--kuro-white-normal);
+	--collapse-icon-color-collapsed: var(--kuro-white-dark);
+
 	/* Cursor */
 	--cursor: default;
 	--cursor-link: pointer;
+
 	/* Dialogs - e.g. small modals, confirmations */
 	--dialog-width: 560px;
 	--dialog-max-width: 80vw;
 	--dialog-max-height: 85vh;
+
 	/* Dividers â€” between panes */
 	--divider-color: var(--background-modifier-border);
+	--divider-color: var(--kuro-black-light);
 	--divider-color-hover: var(--interactive-accent);
+	--divider-color-hover: var(--kuro-white-light);
 	--divider-width: 1px;
-	--divider-width-hover: 3px;
-	--divider-vertical-height: calc(100% - var(--header-height));
+	--divider-width-hover: 2px;
+
 	/* Dragging */
 	--drag-ghost-background: rgba(0, 0, 0, 0.85);
 	--drag-ghost-text-color: #fff;
+
 	/* Embeds */
 	--embed-max-height: 4000px;
 	--embed-canvas-max-height: 400px;
@@ -205,6 +211,7 @@ body {
 	--graph-node-focused: var(--text-accent);
 	--graph-node-tag: var(--color-green);
 	--graph-node-attachment: var(--color-yellow);
+
 	/* Headings */
 	--heading-formatting: var(--text-faint);
 	--heading-spacing: calc(var(--p-spacing) * 2.5);
