@@ -62,8 +62,18 @@
 	--kuro-monospace-default: "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
 }
 
-
 body {
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 16px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+	--font-text-theme: "Atkinson Hyperlegible", "serif";
+	background-color: red !important;
 	/* Animations */
 	--anim-duration-none: 0;
 	--anim-duration-superfast: 70ms;
@@ -75,28 +85,23 @@ body {
 	--anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	--anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
 
-	/* Blockquotes */
-	--blockquote-border-thickness: 8px;
-	--blockquote-border-color: var(--kuro-black-light);
-	--blockquote-font-style: italic;
-	--blockquote-color: inherit;
-	--blockquote-background-color: transparent;
-
 	/* Bold */
-	--bold-weight: var(--font-semibold);
-	--bold-color: inherit;
+	--bold-weight: var(--font-extrabold);
+	--bold-color: var(--kuro-white-light);
 
 	/* Borders */
-	--border-width: 1px;
+	--border-width: 2px;
+
 	/* Buttons */
-	--button-radius: var(--input-radius);
+	--button-radius: 8px;
+
 	/* Callouts */
-	--callout-border-width: 0px;
-	--callout-border-opacity: 0.25;
-	--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-	--callout-radius: var(--radius-s);
+	--callout-border-width: 8px;
+	--callout-border-opacity: 1;
+	--callout-padding: 32px;
+	--callout-radius: 32px;
 	--callout-blend-mode: var(--highlight-mix-blend-mode);
-	--callout-title-color: inherit;
+	--callout-title-color: white;
 	--callout-title-padding: 0;
 	--callout-title-size: inherit;
 	--callout-content-padding: 0;
@@ -107,7 +112,7 @@ body {
 	--callout-example: var(--color-purple-rgb);
 	--callout-fail: var(--color-red-rgb);
 	--callout-important: var(--color-cyan-rgb);
-	--callout-info: var(--color-blue-rgb);
+	--callout-info: red;
 	--callout-question: var(--color-orange-rgb);
 	--callout-success: var(--color-green-rgb);
 	--callout-summary: var(--color-cyan-rgb);
@@ -136,12 +141,13 @@ body {
 	--checkbox-margin-inline-start: 0.85em;
 	--checklist-done-decoration: line-through;
 	--checklist-done-color: var(--text-muted);
+
 	/* Code */
 	--code-white-space: pre-wrap;
 	--code-radius: var(--radius-s);
 	--code-size: var(--font-smaller);
 	--code-background: var(--background-primary-alt);
-	--code-normal: var(--text-muted);
+	--code-normal: red;
 	--code-comment: var(--text-faint);
 	--code-function: var(--color-yellow);
 	--code-important: var(--color-orange);
@@ -152,6 +158,7 @@ body {
 	--code-string: var(--color-green);
 	--code-tag: var(--color-red);
 	--code-value: var(--color-purple);
+
 	/* Collapse icons */
 	--collapse-icon-color: var(--text-faint);
 	--collapse-icon-color-collapsed: var(--text-accent);
@@ -698,20 +705,6 @@ body {
 	--interactive-accent-hover: var(--color-accent-2);
 }
 
-
-body {
-	--radius-s: 4px;
-	--radius-m: 8px;
-	--radius-l: 16px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
-	--font-text-theme: Atkinson Hyperlegible, serif;
-}
-
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
 	display: none;
@@ -807,7 +800,7 @@ em,
 .cm-em,
 .cm-strong,
 strong {
-	color: var(--kuro-white-light);
+	color: var(--bold-color);
 }
 
 /* HIGHLIGHT */
@@ -1114,13 +1107,20 @@ pre[class*="language-"] {
 
 /* BLOCKQUOTES */
 
-/* editor */
+body {
+	/* Blockquotes */
+	--blockquote-border-thickness: 8px;
+	--blockquote-border-color: var(--kuro-black-light);
+	--blockquote-font-style: italic;
+	--blockquote-color: var(--kuro-orange-light);
+	--blockquote-background-color: transparent;
+}
 
 .markdown-rendered blockquote,
 .cm-quote,
 blockquote {
-	color: var(--kuro-orange-light) !important;
+	color: var(--blockquote-color);
 	border-color: var(--kuro-black-light) !important;
-	border-left-width: 8px !important;
+	border-left-width: var(--blockquote-border-thickness);
 	font-style: italic;
 }
