@@ -106,7 +106,7 @@ body {
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
 	--font-text-theme: "Atkinson Hyperlegible", "serif";
-	background-color: red !important;
+
 	/* Animations */
 	--anim-duration-none: 0;
 	--anim-duration-superfast: 70ms;
@@ -134,24 +134,13 @@ body {
 	--canvas-color-5: var(--color-cyan-rgb);
 	--canvas-color-6: var(--color-purple-rgb);
 	--canvas-dot-pattern: var(--color-base-30);
-	/* Checkboxes */
-	--checkbox-radius: var(--radius-s);
-	--checkbox-size: var(--font-text-size);
-	--checkbox-marker-color: var(--background-primary);
-	--checkbox-color: var(--interactive-accent);
-	--checkbox-color-hover: var(--interactive-accent-hover);
-	--checkbox-border-color: var(--text-faint);
-	--checkbox-border-color-hover: var(--text-muted);
-	--checkbox-margin-inline-start: 0.85em;
-	--checklist-done-decoration: line-through;
-	--checklist-done-color: var(--text-muted);
 
 	/* Code */
 	--code-white-space: pre-wrap;
 	--code-radius: var(--radius-s);
 	--code-size: var(--font-smaller);
 	--code-background: var(--background-primary-alt);
-	--code-normal: red;
+	--code-normal: var(--kuro-code-fg);
 	--code-comment: var(--text-faint);
 	--code-function: var(--color-yellow);
 	--code-important: var(--color-orange);
@@ -824,11 +813,27 @@ mark {
 	font-style: italic;
 }
 
-/* Lists & Tasks */
+/* Checkboxes */
+
+body {
+	--checkbox-radius: 4px;
+	--checkbox-size: 24px;
+	--checkbox-marker-color: var(--kuro-white-dark);
+	--checkbox-color: var(--kuro-black-light);
+	--checkbox-color-hover: var(--kuro-green-dark);
+	--checkbox-border-color: var(--kuro-white-dark);
+	--checkbox-border-color-hover: var(--kuro-white-light);
+	--checkbox-margin-inline-start: 0.85em;
+	--checklist-done-decoration: line-through;
+	--checklist-done-color: var(--kuro-white-dark);
+
+}
 
 .markdown-preview-view .task-list-item-checkbox {
 	border-color: var(--kuro-white-dark);
 }
+
+/* Lists & Tasks */
 
 .list-bullet:after {
 	color: red !important;
