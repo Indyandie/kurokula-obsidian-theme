@@ -85,10 +85,6 @@ body {
 	--anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	--anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
 
-	/* Bold */
-	--bold-weight: var(--font-extrabold);
-	--bold-color: var(--kuro-white-light);
-
 	/* Borders */
 	--border-width: 2px;
 
@@ -796,6 +792,12 @@ a.tag {
 /* bold and emphasis */
 
 /* preview */
+body {
+	--bold-weight: var(--font-extrabold);
+	--bold-color: var(--kuro-white-light);
+
+}
+
 em,
 .cm-em,
 .cm-strong,
