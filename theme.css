@@ -188,19 +188,6 @@ body {
 	--graph-node-tag: var(--color-green);
 	--graph-node-attachment: var(--color-yellow);
 
-	/* Lists */
-	--list-indent: 2.25em;
-	--list-indent-editing: 0.75em;
-	--list-indent-source: 0;
-	--list-spacing: 0.075em;
-	--list-marker-color: var(--text-faint);
-	--list-marker-color-hover: var(--text-muted);
-	--list-marker-color-collapsed: var(--text-accent);
-	--list-bullet-border: none;
-	--list-bullet-radius: 50%;
-	--list-bullet-size: 0.3em;
-	--list-bullet-transform: none;
-	--list-numbered-style: decimal;
 	/* File navigator */
 	--nav-item-size: var(--font-ui-small);
 	--nav-item-color: var(--text-muted);
@@ -528,13 +515,6 @@ body {
 	display: none;
 }
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
-}
-
 .menu {
 	padding: var(--size-2-1);
 }
@@ -744,7 +724,6 @@ body {
 
 /* hr */
 body {
-	/* Horizontal rules */
 	--hr-color: rgba(var(--kuro-white-dark-rgb), 0.3);
 	--hr-thickness: 4px;
 }
@@ -755,7 +734,6 @@ body {
 	--link-color-hover: var(--kuro-blue-light);
 	--link-external-color: var(--kuro-green-normal);
 	--link-external-color-hover: var(--kuro-green-light);
-
 }
 
 /* bold and emphasis */
@@ -808,25 +786,16 @@ body {
 	border-color: var(--kuro-white-dark);
 }
 
-/* Lists & Tasks */
+/* Lists */
 
-.list-bullet:after {
-	color: red !important;
-	background-color: var(--kuro-white-dark);
+body {
+	--list-marker-color: var(--kuro-white-dark);
+	--list-bullet-size: 0.4em;
 }
 
-.cm-s-obsidian span.cm-formatting-list {
-	color: var(--kuro-white-dark);
-}
-
-/* preview */
-ol>li::marker,
-ul>li::marker {
-	color: var(--kuro-white-dark);
-}
-
-/* Indent depth
-   Consistency in horizontal positioning of lists
+/*
+Indent depth
+Consistency in horizontal positioning of lists
 */
 .cm-line.HyperMD-list-line {
 	tab-size: 24px !important;
