@@ -440,35 +440,10 @@ body {
 	/* Color mappings ------------------------ */
 
 	/* Accent HSL values */
-	/*
-	hsl(266.571,78.6517%,65.098%)
-	
-	# ImageMagick pixel enumeration: 1,1,0,65535,hsl
-0,0: (47420,11942,36623)  #B93C2EA68F0F  
 
-
-hsl(260.488,18.2222%,55.8824%)
-
-	*/
 	--accent-h: 260.488;
 	--accent-s: 18.2222%;
 	--accent-l: 55.8824%;
-
-	/* Backgrounds */
-	--background-primary: var(--color-base-00);
-	--background-primary-alt: var(--color-base-10);
-	--background-secondary: var(--color-base-20);
-	--background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
-	--background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-	--background-modifier-border: var(--color-base-30);
-	--background-modifier-border-hover: var(--color-base-35);
-	--background-modifier-border-focus: var(--color-base-40);
-	--background-modifier-error-rgb: var(--color-red-rgb);
-	--background-modifier-error: var(--color-red);
-	--background-modifier-error-hover: var(--color-red);
-	--background-modifier-success-rgb: var(--color-green-rgb);
-	--background-modifier-success: var(--color-green);
-	--background-modifier-message: rgba(0, 0, 0, 0.9);
 }
 
 .workspace-tab-header.is-active::before,
