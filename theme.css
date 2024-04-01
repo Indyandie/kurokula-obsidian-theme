@@ -188,28 +188,6 @@ body {
 	--graph-node-tag: var(--color-green);
 	--graph-node-attachment: var(--color-yellow);
 
-	/* Icons */
-	--icon-size: var(--icon-m);
-	--icon-stroke: var(--icon-m-stroke-width);
-	--icon-xs: 14px;
-	--icon-s: 16px;
-	--icon-m: 18px;
-	--icon-l: 18px;
-	--icon-xl: 32px;
-	--icon-xs-stroke-width: 2px;
-	--icon-s-stroke-width: 2px;
-	--icon-m-stroke-width: 1.75px;
-	--icon-l-stroke-width: 1.75px;
-	--icon-xl-stroke-width: 1.25px;
-	--icon-color: var(--text-muted);
-	--icon-color-hover: var(--text-muted);
-	--icon-color-active: var(--text-accent);
-	--icon-color-focused: var(--text-normal);
-	--icon-opacity: 0.85;
-	--icon-opacity-hover: 1;
-	--icon-opacity-active: 1;
-	--clickable-icon-radius: var(--radius-s);
-
 	/* Inputs */
 	--input-height: 30px;
 	--input-radius: 5px;
@@ -218,20 +196,7 @@ body {
 	/* Italic */
 	--italic-color: inherit;
 	--italic-weight: inherit;
-	/* Z-index */
-	--layer-cover: 5;
-	--layer-sidedock: 10;
-	--layer-status-bar: 15;
-	--layer-popover: 30;
-	--layer-slides: 45;
-	--layer-modal: 50;
-	--layer-notice: 60;
-	--layer-menu: 65;
-	--layer-tooltip: 70;
-	--layer-dragged-item: 80;
-	/* Line heights */
-	--line-height-normal: 1.5;
-	--line-height-tight: 1.3;
+
 	/* Links */
 	--link-color: var(--text-accent);
 	--link-color-hover: var(--text-accent-hover);
@@ -736,6 +701,15 @@ a.tag:hover {
 /* UI Text */
 
 body {
+	/* Icons */
+	--icon-color: var(--kuro-white-normal);
+	--icon-color-hover: var(--kuro-yellow-dark);
+	--icon-color-active: var(--kuro-purple-light);
+	--icon-color-focused: var(--kuro-purple-normal);
+	--icon-opacity: 0.75;
+	--icon-opacity-hover: 0.9;
+	--icon-opacity-active: 1;
+
 	/* Inline title (file name) */
 	--inline-title-color: var(--kuro-white-dark);
 	--inline-title-line-height: var(--h1-line-height);
