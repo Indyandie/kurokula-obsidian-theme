@@ -209,23 +209,7 @@ body {
 	--icon-opacity-hover: 1;
 	--icon-opacity-active: 1;
 	--clickable-icon-radius: var(--radius-s);
-	/* Indentation guide */
-	--indentation-guide-width: 1px;
-	--indentation-guide-width-active: 1px;
-	--indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
-	--indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
-	--indentation-guide-editing-indent: 0.85em;
-	--indentation-guide-reading-indent: -0.85em;
-	--indentation-guide-source-indent: 0.25em;
-	/* Inline title */
-	--inline-title-color: var(--h1-color);
-	--inline-title-font: var(--h1-font);
-	--inline-title-line-height: var(--h1-line-height);
-	--inline-title-size: var(--h1-size);
-	--inline-title-style: var(--h1-style);
-	--inline-title-variant: var(--h1-variant);
-	--inline-title-weight: var(--h1-weight);
-	--inline-title-margin-bottom: 0.5em;
+
 	/* Inputs */
 	--input-height: 30px;
 	--input-radius: 5px;
@@ -752,6 +736,13 @@ a.tag:hover {
 /* UI Text */
 
 body {
+	/* Inline title (file name) */
+	--inline-title-color: var(--kuro-white-dark);
+	--inline-title-line-height: var(--h1-line-height);
+	--inline-title-size: 28px;
+	--inline-title-weight: 600;
+	--inline-title-margin-bottom: 0.5em;
+
 	/* UI font sizes */
 	--font-ui-smaller: 14px;
 	--font-ui-small: 16px;
