@@ -622,27 +622,10 @@ body {
 	--background-modifier-success-rgb: var(--color-green-rgb);
 	--background-modifier-success: var(--color-green);
 	--background-modifier-message: rgba(0, 0, 0, 0.9);
+
 	/* Inputs */
 	--background-modifier-form-field: var(--color-base-00);
-	/* Text */
-	--text-normal: var(--color-base-100);
-	--text-muted: var(--color-base-70);
-	--text-faint: var(--color-base-50);
-	--text-on-accent: white;
-	--text-on-accent-inverted: black;
-	--text-error: var(--color-red);
-	--text-warning: var(--color-orange);
-	--text-success: var(--color-green);
-	--text-selection: hsla(var(--color-accent-hsl), 0.2);
-	--text-highlight-bg-rgb: 255, 208, 0;
-	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
-	--text-accent: var(--color-accent);
-	--text-accent-hover: var(--color-accent-2);
-	--interactive-normal: var(--color-base-00);
-	--interactive-hover: var(--color-base-10);
-	--interactive-accent-hsl: var(--color-accent-hsl);
-	--interactive-accent: var(--color-accent-1);
-	--interactive-accent-hover: var(--color-accent-2);
+
 }
 
 .workspace-tab-header.is-active::before,
@@ -793,6 +776,34 @@ a.tag {
 .cm-hashtag.cm-meta:hover,
 a.tag:hover {
 	opacity: 1;
+}
+
+/* UI Text */
+
+body {
+	--text-normal: rgba(var(--kuro-white-light-rgb), 1);
+	--text-muted: rgba(var(--kuro-white-light-rgb), 0.8);
+	--text-faint: rgba(var(--kuro-white-light-rgb), 0.6);
+	--text-on-accent: var(--text-normal);
+	--text-on-accent-inverted: var(--kuro-black-dark);
+	--text-error: var(--kuro-red-light);
+	--text-warning: var(--kuro-orange-normal);
+	--text-success: var(--kuro-green-normal);
+	--interactive-normal: red;
+
+	/*
+	Couldn't figure this out
+	--text-selection: hsla(var(--color-accent-hsl), 0.2);
+	--text-highlight-bg-rgb: 255, 208, 0;
+	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+	--text-accent: var(--color-accent);
+	--text-accent-hover: var(--color-accent-2);
+	--interactive-normal: var(--color-base-00);
+	--interactive-hover: var(--color-base-10);
+	--interactive-accent-hsl: var(--color-accent-hsl);
+	--interactive-accent: var(--color-accent-1);
+	--interactive-accent-hover: var(--color-accent-2);
+*/
 }
 
 /* bold and emphasis */
