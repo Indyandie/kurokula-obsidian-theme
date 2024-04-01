@@ -193,10 +193,6 @@ body {
 	--input-radius: 5px;
 	--input-font-weight: var(--font-normal);
 	--input-border-width: 1px;
-	/* Italic */
-	--italic-color: inherit;
-	--italic-weight: inherit;
-
 	/* Links */
 	--link-color: var(--text-accent);
 	--link-color-hover: var(--text-accent-hover);
@@ -771,16 +767,19 @@ body {
 
 /* bold and emphasis */
 
-/* preview */
 body {
+	/* bold */
 	--bold-weight: var(--font-extrabold);
 	--bold-color: var(--kuro-white-light);
 
+	/* Italic */
+	--italic-color: var(--bold-color);
+	--italic-weight: var(--font-light);
 }
 
-em,
 .cm-em,
 .cm-strong,
+em,
 strong {
 	color: var(--bold-color);
 }
