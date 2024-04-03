@@ -772,13 +772,14 @@ body {
 	--code-string: var(--kuro-code-string);
 	--code-tag: var(--kuro-code-constant);
 	--code-value: var(--kuro-code-variable-other);
+	--code-inline: var(--kuro-yellow-dark);
 }
 
 /* edit-*/
 
 .cm-inline-code {
 	background-color: var(--kuro-black-normal) !important;
-	color: var(--kuro-yellow-dark) !important;
+	color: var(--code-inline) !important;
 	font-weight: 600;
 	bottom: 0px !important;
 }
@@ -789,7 +790,7 @@ code,
 .markdown-rendered code {
 	font-family: var(--kuro-monospace-default);
 	background-color: var(--kuro-black-light);
-	color: var(--kuro-yellow-light) !important;
+	color: var(--code-inline) !important;
 	font-weight: bolder;
 }
 
