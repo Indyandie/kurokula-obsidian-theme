@@ -759,7 +759,7 @@ Consistency in horizontal positioning of lists
 
 body {
 	--code-radius: 12px;
-	--code-size: 16px;
+	/*--code-size: 16px;*/
 	--code-background: var(--kuro-code-bg);
 	--code-normal: var(--kuro-code-fg);
 	--code-comment: var(--kuro-code-comment);
@@ -789,7 +789,6 @@ code,
 .markdown-rendered code {
 	font-family: var(--kuro-monospace-default);
 	background-color: var(--kuro-black-light);
-	font-size: 16px;
 	color: var(--kuro-yellow-light) !important;
 	font-weight: bolder;
 }
@@ -812,7 +811,6 @@ code,
 
 .cm-s-obsidian .HyperMD-codeblock {
 	font-family: var(--kuro-monospace-default);
-	font-size: 16px;
 }
 
 .token.important,
