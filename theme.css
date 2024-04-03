@@ -596,8 +596,6 @@ body {
 	--status-bar-background: var(--background-primary);
 	--status-bar-border-color: var(--kuro-black-light);
 	--status-bar-text-color: var(--kuro-purple-dark);
-	--status-bar-radius: 0 0 0 0;
-
 
 	/* Inputs */
 	--input-radius: 4px;
