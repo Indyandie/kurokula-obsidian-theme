@@ -135,28 +135,11 @@ body {
 	--canvas-color-6: var(--color-purple-rgb);
 	--canvas-dot-pattern: var(--color-base-30);
 
-	/* Collapse icons */
-	--collapse-icon-color: var(--kuro-white-normal);
-	--collapse-icon-color-collapsed: var(--kuro-white-dark);
-
 	/* Cursor */
 	--cursor: default;
 	--cursor-link: pointer;
 
-	/* Dialogs - e.g. small modals, confirmations */
-	--dialog-width: 560px;
-	--dialog-max-width: 80vw;
-	--dialog-max-height: 85vh;
-
-	/* Dividers â€” between panes */
-	--divider-color: var(--kuro-black-light);
-	--divider-color-hover: var(--kuro-white-light);
-	--divider-width: 1px;
-	--divider-width-hover: 2px;
-
 	/* Embeds */
-	--embed-max-height: 4000px;
-	--embed-canvas-max-height: 400px;
 	--embed-background: inherit;
 	--embed-border-left: 2px solid var(--interactive-accent);
 	--embed-border-right: none;
@@ -169,15 +152,6 @@ body {
 	--embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
 		inset 0 0 0 1px var(--background-modifier-border);
 
-	/* File layout */
-	--file-line-width: 700px;
-	--file-folding-offset: 24px;
-	--file-margins: var(--size-4-8);
-	--file-header-font-size: var(--font-ui-small);
-	--file-header-font-weight: 400;
-	--file-header-border: var(--border-width) solid transparent;
-	--file-header-justify: center;
-
 	/* Graphs */
 	--graph-controls-width: 240px;
 	--graph-text: var(--text-normal);
@@ -189,7 +163,6 @@ body {
 	--graph-node-attachment: var(--color-yellow);
 
 	/* File navigator */
-	--nav-item-size: var(--font-ui-small);
 	--nav-item-color: var(--text-muted);
 	--nav-item-color-hover: var(--text-normal);
 	--nav-item-color-active: var(--text-normal);
@@ -198,15 +171,6 @@ body {
 	--nav-item-background-hover: var(--background-modifier-hover);
 	--nav-item-background-active: var(--background-modifier-hover);
 	--nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15);
-	--nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
-	--nav-item-parent-padding: var(--nav-item-padding);
-	--nav-item-children-padding-left: var(--size-2-2);
-	--nav-item-children-margin-left: var(--size-4-3);
-	--nav-item-weight: inherit;
-	--nav-item-weight-hover: inherit;
-	--nav-item-weight-active: inherit;
-	--nav-item-white-space: nowrap;
-	--nav-indentation-guide-width: var(--indentation-guide-width);
 	--nav-indentation-guide-color: var(--indentation-guide-color);
 	--nav-collapse-icon-color: var(--collapse-icon-color);
 	--nav-collapse-icon-color-collapsed: var(--text-faint);
@@ -214,13 +178,9 @@ body {
 	--nav-heading-color-hover: var(--text-normal);
 	--nav-heading-color-collapsed: var(--text-faint);
 	--nav-heading-color-collapsed-hover: var(--text-muted);
-	--nav-heading-weight: var(--font-medium);
-	--nav-heading-weight-hover: var(--font-medium);
 
 	/* Metadata */
 	--metadata-background: transparent;
-	--metadata-display-reading: block;
-	--metadata-display-editing: block;
 	--metadata-max-width: none;
 	--metadata-padding: var(--size-4-2) 0;
 	--metadata-border-color: var(--background-modifier-border);
@@ -254,9 +214,7 @@ body {
 
 	/* Modals - e.g. settings, community themes, community plugins */
 	--modal-background: var(--background-primary);
-	--modal-border-width: var(--border-width);
 	--modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
-	--modal-radius: var(--radius-l);
 
 	/* Multi-select pills */
 	--pill-color: var(--text-muted);
@@ -275,52 +233,11 @@ body {
 	--pill-radius: 2em;
 	--pill-weight: inherit;
 
-	/* Popovers - file previews */
-	--popover-width: 450px;
-	--popover-height: 400px;
-	--popover-max-height: 70vh;
-	--popover-pdf-width: 600px;
-	--popover-pdf-height: 800px;
-	--popover-font-size: var(--font-text-size);
-
-	/* Prompts - e.g. quick switcher, command palette */
-	--prompt-input-height: 40px;
-	--prompt-width: 700px;
-	--prompt-max-width: 80vw;
-	--prompt-max-height: 70vh;
-	--prompt-border-width: var(--border-width);
-	--prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
-
-	/* Radiuses */
-	--radius-s: 4px;
-	--radius-m: 8px;
-	--radius-l: 12px;
-	--radius-xl: 16px;
-
 	/* Ribbon */
 	--ribbon-background: var(--background-secondary);
 	--ribbon-background-collapsed: var(--background-primary);
 	--ribbon-width: 44px;
 	--ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
-
-	/* Search */
-	--search-clear-button-color: var(--text-muted);
-	--search-clear-button-size: 13px;
-	--search-icon-color: var(--text-muted);
-	--search-icon-size: 18px;
-	--search-result-background: var(--background-primary);
-
-	/* Sliders */
-	--slider-thumb-border-width: 1px;
-	--slider-thumb-border-color: var(--background-modifier-border-hover);
-	--slider-thumb-height: 18px;
-	--slider-thumb-width: 18px;
-	--slider-thumb-y: -6px;
-	--slider-thumb-radius: 50%;
-	--slider-s-thumb-size: 15px;
-	--slider-s-thumb-position: -5px;
-	--slider-track-background: var(--background-modifier-border);
-	--slider-track-height: 3px;
 
 	/* Tabs */
 	--tab-background-active: var(--background-primary);
@@ -331,26 +248,10 @@ body {
 	--tab-text-color-focused-highlighted: var(--text-accent);
 	--tab-text-color-focused-active-current: var(--text-normal);
 	--tab-font-size: var(--font-ui-small);
-	--tab-font-weight: inherit;
+	--tab-font-size: 12px;
 	--tab-container-background: var(--background-secondary);
 	--tab-divider-color: var(--background-modifier-border-hover);
 	--tab-outline-color: var(--divider-color);
-	--tab-outline-width: 1px;
-	--tab-curve: 6px;
-	--tab-radius: var(--radius-s);
-	--tab-radius-active: 6px 6px 0 0;
-	--tab-width: 200px;
-	--tab-max-width: 320px;
-
-	/* Stacked tabs */
-	--tab-stacked-pane-width: 700px;
-	--tab-stacked-header-width: var(--header-height);
-	--tab-stacked-font-size: var(--font-ui-small);
-	--tab-stacked-font-weight: 400;
-	--tab-stacked-text-align: left;
-	--tab-stacked-text-transform: rotate(0deg);
-	--tab-stacked-text-writing-mode: vertical-lr;
-	--tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
 
 	/* Tables */
 	--table-background: transparent;
@@ -395,8 +296,6 @@ body {
 	--tag-size: var(--font-smaller);
 	--tag-color: var(--text-accent);
 	--tag-color-hover: var(--text-accent);
-	--tag-decoration: none;
-	--tag-decoration-hover: none;
 	--tag-background: hsla(var(--interactive-accent-hsl), 0.1);
 	--tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
 	--tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
@@ -404,43 +303,21 @@ body {
 	--tag-border-width: 0px;
 	--tag-padding-x: 0.65em;
 	--tag-padding-y: 0.25em;
-	--tag-radius: 2em;
-	--tag-weight: inherit;
 
 	/* Window frame */
 	--titlebar-background: var(--background-secondary);
 	--titlebar-background-focused: var(--background-secondary-alt);
-	--titlebar-border-width: 0px;
 	--titlebar-border-color: var(--background-modifier-border);
 	--titlebar-text-color: var(--text-muted);
 	--titlebar-text-color-focused: var(--text-normal);
 	--titlebar-text-weight: var(--font-bold);
-
-	/* Toggles */
-	--toggle-border-width: 2px;
-	--toggle-width: 40px;
-	--toggle-radius: 18px;
-	--toggle-thumb-color: white;
-	--toggle-thumb-radius: 18px;
-	--toggle-thumb-height: 18px;
-	--toggle-thumb-width: 18px;
-	--toggle-s-border-width: 2px;
-	--toggle-s-width: 34px;
-	--toggle-s-thumb-height: 15px;
-	--toggle-s-thumb-width: 15px;
 
 	/* Vault name */
 	--vault-name-font-size: var(--font-ui-small);
 	--vault-name-font-weight: var(--font-medium);
 	--vault-name-color: var(--text-normal);
 
-	/* Workspace */
-	--workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-
-	/* Color mappings ------------------------ */
-
 	/* Accent HSL values */
-
 	--accent-h: 260.488;
 	--accent-s: 18.2222%;
 	--accent-l: 55.8824%;
@@ -592,6 +469,42 @@ a.tag:hover {
 /* UI Text */
 
 body {
+	/* Sliders */
+	--slider-track-background: var(--kuro-white-dark);
+	--slider-thumb-height: 18px;
+	--slider-thumb-width: 18px;
+	--slider-thumb-y: -6px;
+	--slider-thumb-radius: 50%;
+	--slider-s-thumb-size: 15px;
+	--slider-s-thumb-position: -5px;
+	--slider-track-height: 3px;
+
+	/* Search */
+	--search-clear-button-color: var(--kuro-red-dark);
+	--search-icon-color: var(--kuro-purple-dark);
+
+	/* Prompts - e.g. quick switcher, command palette */
+	--prompt-input-height: 48px;
+	--prompt-width: 720px;
+	--prompt-max-width: 80vw;
+	--prompt-max-height: 70vh;
+	--prompt-border-width: 2px;
+	--prompt-border-color: var(--kuro-purple-dark);
+
+	/* File layout */
+	--file-header-font-size: 12px;
+	--file-header-justify: left;
+
+	/* Dividers â€” between panes */
+	--divider-color: var(--kuro-black-light);
+	--divider-color-hover: var(--kuro-white-light);
+	--divider-width: 1px;
+	--divider-width-hover: 2px;
+
+	/* Collapse icons */
+	--collapse-icon-color: var(--kuro-white-normal);
+	--collapse-icon-color-collapsed: var(--kuro-white-dark);
+
 	/* Status bar */
 	--status-bar-background: var(--background-primary);
 	--status-bar-border-color: var(--kuro-black-light);
